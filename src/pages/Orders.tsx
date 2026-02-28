@@ -34,7 +34,7 @@ export default function Orders() {
   }
 
   return (
-    <div className="bg-slate-50 font-sans min-h-screen flex flex-col antialiased">
+    <div className="bg-slate-50 font-sans h-full flex flex-col antialiased overflow-y-auto">
       <header className="sticky top-0 z-50 bg-white shadow-sm">
         <div className="flex items-center justify-between px-4 py-3">
           <button onClick={() => navigate('/')} className="flex items-center justify-center text-slate-900 p-1 rounded-full hover:bg-slate-100 transition-colors">

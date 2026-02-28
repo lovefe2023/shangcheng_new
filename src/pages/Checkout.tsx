@@ -51,7 +51,7 @@ export default function Checkout() {
   };
 
   return (
-    <div className="bg-slate-50 text-slate-900 font-sans antialiased overflow-x-hidden pb-24 min-h-screen">
+    <div className="bg-slate-50 text-slate-900 font-sans antialiased overflow-x-hidden pb-24 h-full overflow-y-auto">
       {/* Header */}
       <header className="sticky top-0 z-10 bg-white shadow-sm">
         <div className="flex items-center justify-between p-4 h-16 max-w-md mx-auto">

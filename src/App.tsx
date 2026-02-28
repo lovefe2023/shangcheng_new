@@ -25,7 +25,7 @@ function Layout() {
   ];
 
   return (
-    <div className="flex flex-col min-h-screen bg-white">
+    <div className="flex flex-col h-full bg-white">
       <main className="flex-1 overflow-y-auto pb-16">
         <Outlet />
       </main>
@@ -60,22 +60,26 @@ function Layout() {
 
 export default function App() {
   return (
-    <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
-      <Routes>
-        <Route element={<Layout />}>
-          <Route path="/" element={<Home />} />
-          <Route path="/category" element={<Category />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/profile" element={<Profile />} />
-        </Route>
-        <Route path="/product/:id" element={<ProductDetail />} />
-        <Route path="/checkout" element={<Checkout />} />
-        <Route path="/orders" element={<Orders />} />
-        <Route path="/order/:id" element={<OrderDetail />} />
-        <Route path="/products" element={<ProductList />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/quick-login" element={<QuickLogin />} />
-      </Routes>
-    </BrowserRouter>
+    <div className="min-h-screen bg-gray-100 flex justify-center overflow-hidden">
+      <div className="w-full max-w-[480px] h-[100dvh] bg-white shadow-2xl relative overflow-hidden transform scale-100 origin-top">
+        <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
+          <Routes>
+            <Route element={<Layout />}>
+              <Route path="/" element={<Home />} />
+              <Route path="/category" element={<Category />} />
+              <Route path="/cart" element={<Cart />} />
+              <Route path="/profile" element={<Profile />} />
+            </Route>
+            <Route path="/product/:id" element={<ProductDetail />} />
+            <Route path="/checkout" element={<Checkout />} />
+            <Route path="/orders" element={<Orders />} />
+            <Route path="/order/:id" element={<OrderDetail />} />
+            <Route path="/products" element={<ProductList />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/quick-login" element={<QuickLogin />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
+    </div>
   );
 }

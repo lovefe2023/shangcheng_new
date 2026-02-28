@@ -42,8 +42,8 @@ export default function QuickLogin() {
   };
 
   return (
-    <div className="bg-slate-50 font-sans min-h-screen flex flex-col items-center justify-center">
-      <div className="relative w-full max-w-[480px] bg-white shadow-xl min-h-screen flex flex-col overflow-hidden">
+    <div className="bg-slate-50 font-sans h-full flex flex-col items-center justify-center">
+      <div className="relative w-full max-w-[480px] bg-white shadow-xl h-full flex flex-col overflow-hidden overflow-y-auto">
         <div className="flex items-center justify-between p-4 z-10 relative">
           <button onClick={() => navigate(-1)} className="flex items-center justify-center w-10 h-10 rounded-full hover:bg-slate-100 text-slate-900 transition-colors">
             <ArrowLeft className="w-6 h-6" />

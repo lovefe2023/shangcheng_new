@@ -43,7 +43,7 @@ export default function ProductDetail() {
     }
 
     return (
-        <div className="flex flex-col min-h-screen bg-slate-50 pb-16">
+        <div className="flex flex-col h-full bg-slate-50 pb-16">
             <header className="fixed top-0 left-0 right-0 z-20 flex items-center justify-between p-4">
                 <button
                     onClick={() => navigate(-1)}

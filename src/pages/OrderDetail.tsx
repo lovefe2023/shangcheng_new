@@ -5,7 +5,7 @@ export default function OrderDetail() {
   const navigate = useNavigate();
 
   return (
-    <div className="relative flex h-full min-h-screen w-full flex-col overflow-x-hidden bg-slate-50 shadow-2xl font-sans">
+    <div className="relative flex h-full w-full flex-col overflow-x-hidden bg-slate-50 shadow-2xl font-sans overflow-y-auto">
       <header className="sticky top-0 z-50 flex items-center justify-between bg-white px-4 py-3 shadow-sm transition-colors">
         <button onClick={() => navigate(-1)} className="flex size-10 items-center justify-center rounded-full text-slate-900 hover:bg-slate-100 active:scale-95 transition-all">
           <ArrowLeft className="w-6 h-6" />

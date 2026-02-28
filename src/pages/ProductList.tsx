@@ -35,7 +35,7 @@ export default function ProductList() {
   }
 
   return (
-    <div className="flex flex-col min-h-screen bg-slate-50">
+    <div className="flex flex-col h-full bg-slate-50">
       <header className="sticky top-0 z-20 bg-white px-4 py-3 shadow-sm">
         <div className="flex items-center gap-4 mb-3">
           <button onClick={() => navigate(-1)} className="text-slate-600">

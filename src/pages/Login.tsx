@@ -31,8 +31,8 @@ export default function Login() {
   };
 
   return (
-    <div className="bg-slate-50 font-sans min-h-screen flex flex-col items-center justify-center">
-      <div className="relative w-full max-w-md h-full min-h-screen flex flex-col bg-white shadow-xl overflow-hidden">
+    <div className="bg-slate-50 font-sans h-full flex flex-col items-center justify-center">
+      <div className="relative w-full max-w-md h-full flex flex-col bg-white shadow-xl overflow-hidden overflow-y-auto">
         <div className="flex items-center justify-between p-4 z-10">
           <button onClick={() => navigate(-1)} className="flex items-center justify-center w-10 h-10 rounded-full text-slate-900 hover:bg-slate-100 transition-colors">
             <ArrowLeft className="text-2xl" />
