@@ -97,10 +97,6 @@ app.get('/api/profile/:userId', async (req, res) => {
     }
 });
 
-if (process.env.NODE_ENV !== 'production') {
-    app.listen(port, () => {
-        console.log(`Server running on port ${port}`);
-    });
-}
-
-export default app;
+app.listen(port, () => {
+    console.log(`Backend server running at http://localhost:${port}`);
+});
